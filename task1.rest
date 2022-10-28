@@ -1,0 +1,4 @@
+@url = "http://localhost:3000/"
+
+GET http://localhost:3000/api/task1 HTTP/1.1;
+######################################
