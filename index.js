@@ -14,7 +14,7 @@ app.use(
   })
 );
 let currentDate = new Date();
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.status(200).json({
     slack_name: "Quadri",
     current_day: "Friday",
