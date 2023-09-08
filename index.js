@@ -14,11 +14,14 @@ app.use(
   })
 );
 app.get("/", (req, res) => {
-  res.status(200).send({
-    slackUsername: "Quadri USman",
-    backend: true,
-    age: 36,
-    bio: "I am a fullstack developer with skills in HTML, CSS, JavaScript, Node.Js, Express, MongoDB, etc.",
+  res.status(200).json({
+    slack_name: "Quadri",
+    current_day: "Friday",
+    utc_time: "2023-09-08T15:12:25Z",
+    track: "backend",
+    github_file_url: "",
+    github_repo_url: "",
+    status_code: 200,
   });
 });
 const port = process.env.PORT || 3000;
