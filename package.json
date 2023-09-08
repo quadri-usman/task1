@@ -19,5 +19,8 @@
     "nodemon": "^2.0.20",
     "parser": "^0.1.4",
     "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.9"
   }
 }
