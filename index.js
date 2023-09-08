@@ -13,11 +13,12 @@ app.use(
     origin: "*",
   })
 );
+let currentDate = new Date();
 app.get("/", (req, res) => {
   res.status(200).json({
     slack_name: "Quadri",
     current_day: "Friday",
-    utc_time: "2023-09-08T15:12:25Z",
+    utc_time: currentDate.toISOString().split(".")[0] + "Z",
     track: "backend",
     github_file_url: "",
     github_repo_url: "",
